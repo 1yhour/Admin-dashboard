@@ -6,4 +6,6 @@ Route::redirect('/','/admin/dashboard');
 Route::controller(AdminDashboardControl::class)->group(function () {
     Route::get('/admin/dashboard', 'admin')->name('admin.dashboard');
     Route::get('/admin/users', 'user')->name('admin.users');
-});
+    Route::get('/admin/products', 'product')->name('admin.products');
+    Route::get('/admin/orders','order')->name('admin.orders');
+}); 
